@@ -4,7 +4,8 @@
   "description": "A logistic solution.",
   "main": "server.js",
   "scripts": {
-    "start": "env-cmd -f ./environment/logistic-hash-default/.env nodemon server.js"
+    "start": "env-cmd -f ./environment/logistic-hash-default/.env nodemon server.js",
+    "start-prod": "env-cmd -f ./environment/logistic-hash-default/.env.prod nodemon server.js"
   },
   "keywords": [
     "logistic",
