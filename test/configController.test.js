@@ -19,7 +19,8 @@ describe('[configControllers.js]', () => {
                 }
             };
             let next = () => { }
-            whoAmIController(req, res, next);
+            const result = whoAmIController(req, res, next);
+            chai.expect(result).to.be.equal(1);
         })
     })
 })

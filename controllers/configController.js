@@ -6,6 +6,7 @@ const whoAmIController = (req, res, next) => {
         'server-state': getEnvValues('SERVER_STATE'),
         'port': getEnvValues('PORT')
     })
+    return 1;
 }
 
 module.exports = { whoAmIController }

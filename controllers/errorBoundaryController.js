@@ -4,6 +4,7 @@ const errorBoundaryController = (error, req, res, next) => {
             message: error.message,
         })
     }
+    console.log(error)
     res.status(500).json({
         message: 'Something went wrong. Please try again'
     })

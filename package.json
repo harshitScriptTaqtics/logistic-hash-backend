@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "env-cmd -f ./environment/logistic-hash-default/.env nodemon server.js",
-    "test":"env-cmd -f ./environment/logistic-hash-default/.env mocha",
-    "start-prod": "env-cmd -f ./environment/logistic-hash-default/.env.prod nodemon server.js"
+    "test": "env-cmd -f ./environment/logistic-hash-default/.env mocha"
   },
   "keywords": [
     "logistic",
@@ -20,13 +19,17 @@
   "author": "Harshit Bhawsar",
   "license": "ISC",
   "devDependencies": {
-    "dotenv": "^16.3.1",
-    "env-cmd": "^10.1.0"
-  },
-  "dependencies": {
     "chai": "^4.3.10",
-    "express": "^4.18.2",
+    "env-cmd": "^10.1.0",
     "mocha": "^10.2.0",
     "sinon": "^17.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongodb": "^4.6.0",
+    "mongoose": "^5.10.13"
   }
 }
